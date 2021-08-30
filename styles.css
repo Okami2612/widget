@@ -1,85 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background: #0e1538;
+body {
+  /* background: #0e1538; */
 }
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
+section {
+  padding: 30px;
 }
-.section-title{
-    color: white;
-    font-size: 50px;
-    margin-bottom: 30px;
+.section-title {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 30px;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;    
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
-.glowing-gradient-norder-btn a{
-    position: relative;
-    width: 160px;
-    height: 60px;
-    display: inline-block;
-    background: #ffffff;
-    margin: 20px;
+
+/* Glowing Button */
+.section-btn {
+  background: #0e1538;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.glowing-gradient-norder-btn a {
+  position: relative;
+  width: 160px;
+  height: 60px;
+  display: inline-block;
+  background: #ffffff;
+  margin: 20px;
 }
 .glowing-gradient-norder-btn a::before,
-.glowing-gradient-norder-btn a::after{
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: #f00;
-    transition: .5s;
+.glowing-gradient-norder-btn a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #f00;
+  transition: 0.5s;
 }
 .glowing-gradient-norder-btn a:nth-child(1):before,
-.glowing-gradient-norder-btn a:nth-child(1):after{
-    background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
+.glowing-gradient-norder-btn a:nth-child(1):after {
+  background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
 }
 .glowing-gradient-norder-btn a:nth-child(2):before,
-.glowing-gradient-norder-btn a:nth-child(2):after{
-    background: linear-gradient(45deg, #ff075b, #0e1538, #0e1538, #1aff22);
+.glowing-gradient-norder-btn a:nth-child(2):after {
+  background: linear-gradient(45deg, #ff075b, #0e1538, #0e1538, #1aff22);
 }
-.glowing-gradient-norder-btn a:hover::before{
-    inset: -3px;
+.glowing-gradient-norder-btn a:hover::before {
+  inset: -3px;
 }
-.glowing-gradient-norder-btn a:hover::after{
-    inset: -3px;
-    filter: blur(10px);
+.glowing-gradient-norder-btn a:hover::after {
+  inset: -3px;
+  filter: blur(10px);
 }
-.glowing-gradient-norder-btn a span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    background: #0e1538;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: white;
-    border: 1px solid #040a29;
-    overflow: hidden;
+.glowing-gradient-norder-btn a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: #0e1538;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  border: 1px solid #040a29;
+  overflow: hidden;
 }
-.glowing-gradient-norder-btn a span::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, .075);
-    transform: skew(25deg);
+.glowing-gradient-norder-btn a span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.075);
+  transform: skew(25deg);
+}
+
+/* Stretch Items */
+.stretch-item {
+  margin-top: 20px;
+  min-height: 100vh;
+  background: #0e1538;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.image {
+  position: relative;
+  flex: 0.4;
+  margin-right: 1rem;
+  border-radius: 3px;
+  transition: flex 1s ease-in;
+  cursor: pointer;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.image.active {
+  flex: 5;
+}
+.image-tittle {
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  margin-left: 3rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  opacity: 0;
+}
+.image.active .image-tittle {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
