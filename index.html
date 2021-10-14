@@ -1,92 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Styled Code page</title>
+  </head>
 
-    <link rel="stylesheet" href="styles.css">
-    <title>Code page</title>
-</head>
+  <body>
+    <!-- Icon Navbar Glassmorphism Hover Effects -->
+    <section class="glassmorphism-hover-effects">
+        <ul>
+            <li class="active"><a href=""><ion-icon name="home-outline"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="person-outline"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="settings-outline"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="chatbubbles-outline"></ion-icon></a></li>            
+            <div id="marker"></div>
+        </ul>
+    </section>
 
-<body>
+    <!-- Text Effects -->
+    <section class="section-text">
+      <div class="container">
+        <div class="text-box">
+          <div class="line"></div>
+          <div class="layer"></div>
+          <h1>Happy Coding</h1>
+        </div>
+      </div>
+    </section>
+
     <!-- Buttons -->
     <section class="section-btn">
-        <h1 class="section-title">Button</h1>
-        <div class="glowing-gradient-norder-btn container">
-            <a href="#">
-                <span>Button</span>
-            </a>
-            <a href="#">
-                <span>Button</span>
-            </a>
-        </div>
+      <h1 class="section-title">Button</h1>
+      <div class="glowing-gradient-norder-btn container">
+        <a href="#">
+          <span>Button</span>
+        </a>
+        <a href="#">
+          <span>Button</span>
+        </a>
+      </div>
+      <div class="animated-btns">
+        <a href="#" style="--clr:#ff22bb;--i:0;"><span>Button</span></a>
+        <a href="#" style="--clr:#00ccff;--i:1;"><span>Button</span></a>
+        <a href="#" style="--clr:#22e622;--i:2;"><span>Button</span></a>
+      </div>
     </section>
 
     <!-- Stretch Image -->
     <section class="stretch-item">
-        <div class="image-container">
-            <div class="image image1">
-                <img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
-                    alt="sea">
-                <h3 class="image-tittle">sea beach</h3>
-            </div>
-            <div class="image image1">
-                <img src="https://images.unsplash.com/photo-1486072889922-9aea1fc0a34d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW91dGFpbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                    alt="sea">
-                <h3 class="image-tittle">moutain</h3>
-            </div>
-            <div class="image image2">
-                <img src="https://images.unsplash.com/photo-1616849675415-d0f1727e2559?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                    alt="sea">
-                <h3 class="image-tittle">sunset</h3>
-            </div>
-            <div class="image image3 active">
-                <img src="https://images.unsplash.com/photo-1541423408854-5df732b6f6d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                    alt="sea">
-                <h3 class="image-tittle">city at night</h3>
-            </div>
+      <div class="image-container">
+        <div class="image image1">
+          <img
+            src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+            alt="sea"
+          />
+          <h3 class="image-tittle">sea beach</h3>
         </div>
+        <div class="image image1">
+          <img
+            src="https://images.unsplash.com/photo-1486072889922-9aea1fc0a34d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW91dGFpbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="sea"
+          />
+          <h3 class="image-tittle">moutain</h3>
+        </div>
+        <div class="image image2">
+          <img
+            src="https://images.unsplash.com/photo-1616849675415-d0f1727e2559?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt="sea"
+          />
+          <h3 class="image-tittle">sunset</h3>
+        </div>
+        <div class="image image3 active">
+          <img
+            src="https://images.unsplash.com/photo-1541423408854-5df732b6f6d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt="sea"
+          />
+          <h3 class="image-tittle">city at night</h3>
+        </div>
+      </div>
     </section>
 
     <!-- Card Border Styled -->
     <section class="card-border">
-        <div class="box">
-            <h2>Lorem ipsum</h2>
-        </div>
+      <div class="box">
+        <h2>Lorem ipsum</h2>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="waves">
-            <div class="wave" id="wave-1"></div>
-            <div class="wave" id="wave-2"></div>
-            <div class="wave" id="wave-3"></div>
-            <div class="wave" id="wave-4"></div>
-            <div class="wave" id="wave-5"></div>
-        </div>
-        <ul class="social-icons">
-            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="logo-codepen"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="logo-dribbble"></ion-icon></a></li>
-        </ul>
-        <ul class="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Lorem ipsum</a></li>
-            <li><a href="">Lorem ipsum</a></li>
-            <li><a href="">Lorem ipsum</a></li>
-        </ul>
-        <p>2021 Benjamin Le | All Right Reserved</p>
+      <div class="waves">
+        <div class="wave" id="wave-1"></div>
+        <div class="wave" id="wave-2"></div>
+        <div class="wave" id="wave-3"></div>
+        <div class="wave" id="wave-4"></div>
+        <div class="wave" id="wave-5"></div>
+      </div>
+      <ul class="social-icons">
+        <li>
+          <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+          <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+        </li>
+        <li>
+          <a href=""><ion-icon name="logo-codepen"></ion-icon></a>
+        </li>
+        <li>
+          <a href=""><ion-icon name="logo-github"></ion-icon></a>
+        </li>
+        <li>
+          <a href=""><ion-icon name="logo-dribbble"></ion-icon></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Lorem ipsum</a></li>
+        <li><a href="">Lorem ipsum</a></li>
+        <li><a href="">Lorem ipsum</a></li>
+      </ul>
+      <p>2021 Benjamin Le | All Right Reserved</p>
     </footer>
 
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
