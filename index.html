@@ -5,21 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Styled Code page</title>
   </head>
 
   <body>
     <!-- Icon Navbar Glassmorphism Hover Effects -->
-    <section class="glassmorphism-hover-effects">
+    <section class="navbar-effect">
+      <div class="glassmorphism-hover-effects">
         <ul>
-            <li class="active"><a href=""><ion-icon name="home-outline"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="person-outline"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="settings-outline"></ion-icon></a></li>
-            <li><a href=""><ion-icon name="chatbubbles-outline"></ion-icon></a></li>            
-            <div id="marker"></div>
+          <li class="active">
+            <a href=""><ion-icon name="home-outline"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="person-outline"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="add-circle-outline"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="settings-outline"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="chatbubbles-outline"></ion-icon></a>
+          </li>
+          <div id="marker"></div>
         </ul>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><i class="far fa-user"></i></span>
+              <span class="text">Profile</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><i class="fas fa-code"></i></span>
+              <span class="text">Code</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><i class="fas fa-code-branch"></i></span>
+              <span class="text">Github</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><i class="far fa-question-circle"></i></span>
+              <span class="text">Help</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><i class="far fa-comment"></i></span>
+              <span class="text">Comment</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><i class="fas fa-cog"></i></span>
+              <span class="text">Setting</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
     </section>
 
     <!-- Text Effects -->
@@ -45,9 +111,90 @@
         </a>
       </div>
       <div class="animated-btns">
-        <a href="#" style="--clr:#ff22bb;--i:0;"><span>Button</span></a>
-        <a href="#" style="--clr:#00ccff;--i:1;"><span>Button</span></a>
-        <a href="#" style="--clr:#22e622;--i:2;"><span>Button</span></a>
+        <a href="#" style="--clr: #ff22bb; --i: 0"><span>Button</span></a>
+        <a href="#" style="--clr: #00ccff; --i: 1"><span>Button</span></a>
+        <a href="#" style="--clr: #22e622; --i: 2"><span>Button</span></a>
+      </div>
+    </section>
+
+    <!-- Glowing checkbox -->
+    <section class="glowing-checkbox">
+      <div class="glowing_checkbox container">
+        <ul>
+          <li>
+            <label for="">
+              <input type="checkbox" name="" id="" />
+              <div class="icon"><i class="fab fa-bluetooth-b"></i></div>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="" id="" />
+              <div class="icon"><i class="fas fa-wifi"></i></div>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="" id="" />
+              <div class="icon"><i class="fas fa-plane"></i></div>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="" id="" />
+              <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="" id="" />
+              <div class="icon"><i class="fas fa-volume-up"></i></div>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="" id="" />
+              <div class="icon"><i class="fas fa-moon"></i></div>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Card styles -->
+    <section class="card-styles">
+      <div class="card-container">
+        <div class="card">
+          <i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <section class="modal container">
+      <div class="glowing-gradient-norder-btn container" id="open-modal">
+        <a>
+          <span>Open modal</span>
+        </a>
+      </div>
+      <div class="modal_container" id="modal-container">
+        <div class="modal_content">
+          <div class="modal_close close-modal" title="Close">
+            <i class="far fa-window-close"></i>
+          </div>
+          <div class="modal_img">
+            <img
+              src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltdec256b77c54cff1/5f5944e3fbbf77736a0f8b20/04-21-2020212659624_SummonersCup_1000x1000.png"
+              alt=""
+            />
+          </div>
+          <h1 class="modal_title">Champion</h1>
+          <p class="modal_desc">Click the button to close</p>
+          <button class="modal_button modal_button-width">View Status</button>
+          <button class="modal_button modal_button-link close-modal">
+            Close
+          </button>
+        </div>
       </div>
     </section>
 
